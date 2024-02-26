@@ -1,0 +1,30 @@
+{
+  "name": "mvt-bun-prisma",
+  "version": "0.0.1",
+  "description": "Re-production of bun prisma issue",
+  "main": "index.ts",
+  "scripts": {
+    "no-brk" : "bun run src/index.ts",
+    "just-inspect" : "bun run --inspect src/index.ts",
+    "with-brk" : "bun --inspect-brk run src/index.ts",
+    "postinstall": "bun run prisma db push"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.6.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "authorName": "Adrian Elton-Browning",
+  "devDependencies": {
+    "@types/humanize-duration": "^3.27.2",
+    "humanize-duration": "^3.30.0",
+    "prisma": "^5.6.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.17",
+    "pnom": ">= 8.6.12"
+  },
+  "target": "node"
+}
